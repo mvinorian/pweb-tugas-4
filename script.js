@@ -13,7 +13,7 @@ function redirect(url) {
 
 function handleLogin(event) {
   event.preventDefault();
-  users = JSON.parse(window.localStorage.getItem("users"));
+  users = JSON.parse(window.localStorage.getItem("users")) || users;
   const data = {
     email: event.target.email.value,
     password: event.target.password.value,
@@ -34,7 +34,7 @@ function handleLogin(event) {
 
 function handleSignup(event) {
   event.preventDefault();
-  users = JSON.parse(window.localStorage.getItem("users"));
+  users = JSON.parse(window.localStorage.getItem("users")) || users;
   const data = {
     username: event.target.username.value,
     email: event.target.email.value,
