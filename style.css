@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --color-sky-50: #f0f9ff;
+  --color-sky-100: #e0f2fe;
+  --color-sky-200: #bae6fd;
+  --color-sky-300: #7dd3fc;
+  --color-sky-400: #38bdf8;
+  --color-sky-500: #0ea5e9;
+  --color-sky-600: #0284c7;
+  --color-sky-700: #0369a1;
+  --color-sky-800: #075985;
+  --color-sky-900: #0c4a6e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* border: 1px solid aqua; */
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-sky-100);
+}
+
+.form-card {
+  min-width: 20rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+
+  border-radius: 1rem;
+  background-color: var(--color-sky-50);
+  box-shadow: 0 0 2rem 0.25rem var(--color-sky-50);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--color-sky-800);
+}
+
+form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.input,
+.submit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.input__label {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: var(--color-sky-900);
+}
+
+.input__form {
+  all: unset;
+  padding: 0.5rem 0.75rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--color-sky-100);
+  font-family: var(--font-primary);
+  color: var(--color-sky-900);
+}
+
+.submit__button {
+  all: unset;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--color-sky-500);
+
+  text-align: center;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--color-sky-900);
+
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.submit__button:hover {
+  background-color: var(--color-sky-600);
+}
+
+.submit__helper {
+  font-family: var(--font-primary);
+  font-size: small;
+  color: var(--color-sky-900);
+  filter: opacity(60%);
+  text-align: center;
+}
+
+.submit__helper > span {
+  all: unset;
+  font-weight: 500;
+  text-decoration: underline;
+  filter: opacity(100%);
+  cursor: pointer;
+}
